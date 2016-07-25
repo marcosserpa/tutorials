@@ -24,6 +24,8 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
 ALLOWED_HOSTS = []
 
 
@@ -36,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -68,7 +71,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
